@@ -6,25 +6,18 @@ namespace C_Aula_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Digite a Primeira Nota: ");
-            double nota1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a Cor do sémaforo (Vermelho, Amarelo ou Verde): ");
+            string cor = (Console.ReadLine());
 
-            Console.WriteLine("Digite o Segundo Número");
-            double nota2 = double.Parse(Console.ReadLine());
-
-            double media = (nota1 + nota2) / 2;
-
-            string situacao = "";
-
-            Console.WriteLine("Média:  " + media);
-
-            if(media > 7) {
-                situacao = "Aprovado";
-            } else {
-                situacao = "Reprovado";
+            if(cor == "Vermelho"){
+                Console.WriteLine("Pare o Carro");
             }
-
-            Console.WriteLine(situacao);
+             else if(cor == "Amarelo"){
+                Console.WriteLine("Desacelere o Carro");
+            }
+             else{
+                Console.WriteLine("Prossiga");
+            }
         }
     }
 }
