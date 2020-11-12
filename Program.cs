@@ -6,9 +6,15 @@ namespace C_Aula_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Digite seu Nome");
-            string a = Console.ReadLine();
-            Console.WriteLine("Bem Vindo: " + a);
+            Console.WriteLine("Digite o Primeiro Número");
+            int numero1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o Segundo Número");
+            int numero2 = int.Parse(Console.ReadLine());
+
+            int resultado = numero1 + numero2;
+
+            Console.WriteLine(numero1 + " + " + numero2 + " = " + resultado);
         }
     }
 }
