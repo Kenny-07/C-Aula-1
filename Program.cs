@@ -6,7 +6,9 @@ namespace C_Aula_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Digite seu Nome");
+            string a = Console.ReadLine();
+            Console.WriteLine("Bem Vindo: " + a);
         }
     }
 }
