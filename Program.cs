@@ -6,15 +6,25 @@ namespace C_Aula_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Digite o Primeiro Número");
-            int numero1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a Primeira Nota: ");
+            double nota1 = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite o Segundo Número");
-            int numero2 = int.Parse(Console.ReadLine());
+            double nota2 = double.Parse(Console.ReadLine());
 
-            int resultado = numero1 + numero2;
+            double media = (nota1 + nota2) / 2;
 
-            Console.WriteLine(numero1 + " + " + numero2 + " = " + resultado);
+            string situacao = "";
+
+            Console.WriteLine("Média:  " + media);
+
+            if(media > 7) {
+                situacao = "Aprovado";
+            } else {
+                situacao = "Reprovado";
+            }
+
+            Console.WriteLine(situacao);
         }
     }
 }
